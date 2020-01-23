@@ -19,7 +19,7 @@
       "dom"
     ],
     "paths": {
-      "ngx-perfect-scrollbar": [
+      "al-ngx-perfect-scrollbar": [
         "dist/lib"
       ]
     }

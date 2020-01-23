@@ -1,47 +1,16 @@
-# Angular Perfect Scrollbar
+# Fork of Angular Perfect Scrollbar
 
-<a href="https://badge.fury.io/js/ngx-perfect-scrollbar"><img src="https://badge.fury.io/js/ngx-perfect-scrollbar.svg" align="right" alt="npm version" height="18"></a>
 
 This is an Angular wrapper library for the [Perfect Scrollbar](https://utatti.github.io/perfect-scrollbar/). To use this library you should get familiar with the Perfect Scrollbar documentation as well since this documentation only explains details specific to this wrapper.
 
-This documentation is for the latest 5/6.x.x version which requires Angular 5 or newer. For Angular 4 you need to use the latest 4.x.x version. Documentation for the 4.x.x can be found from <a href="https://github.com/zefoy/ngx-perfect-scrollbar/tree/4.x.x/">here</a>.
+### This package is almost the same as using ngx-perfect-scrollbar but it causes issues with perfect-scrollbar 1.5.0 but works fine with 1.4.0 so I created this fork which uses 1.4.0 version of perfect-scrollbar explicitly. 
 
-### Quick links
-
-[Example application](https://zefoy.github.io/ngx-perfect-scrollbar/)
- |
-[StackBlitz example](https://stackblitz.com/github/zefoy/ngx-perfect-scrollbar/tree/master)
- |
-[Perfect Scrollbar documentation](https://github.com/utatti/perfect-scrollbar/)
-
-### Building the library
-
-```bash
-npm install
-npm run build
-```
-
-### Running the example
-
-```bash
-npm install
-npm run start
-```
-
-### Installing and usage
-
-```bash
-npm install ngx-perfect-scrollbar --save
-```
-
-##### Load the module for your app (with global configuration):
-
-Providing the global configuration is optional and when used you should only provide the configuration in your root module.
+## Usage 
 
 ```javascript
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarModule } from 'al-ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'al-ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'al-ngx-perfect-scrollbar';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
